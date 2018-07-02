@@ -1,15 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>leboncoin, site de petites annonces gratuites</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Place favicon.ico in the root directory -->
   <link rel="icon" href="favicon.png" type="image/x-icon"/>
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,7 +22,6 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
   <header id="header">
     <section class="headerContent">
       <section class="content-center clearfix">
@@ -43,63 +43,111 @@
       </section>
     </section>
   </header>
-  <main id="main">
+
+  <main id="main_offres">
     <section class="content-center">
-      <section id="home">
-        <section class="mapFrance">
-          <header class="mapFrance_header">
-            <h1>Trouvez la bonne affaire parmi <span class="orange">27626793 petites annonces</span> sur leboncoin</h1>
-            <section id="home_buttons">
-              <a href="annonce.html">Déposer une annonce</a>
-              <button>Rechercher autour de moi</button>
-            </section>
-          </header>
-          <div id="mapContainer">
-            <img src="img/carte_bon_coin_jaune_transparente.png" alt="carte france leboncoin" usemap="#image-map">
-            <map name="image-map">
-                <area target="_self" alt="hauts_de_france_offers" title="hauts_de_france_offers" href="https://www.leboncoin.fr/annonces/offres/nord_pas_de_calais/" coords="227,11,212,18,211,32,240,45,266,48,278,48" shape="poly">
-                <area target="_self" alt="picardie_offers" title="picardie_offers" href="https://www.leboncoin.fr/annonces/offres/picardie/" coords="213,49,216,88,260,93,278,62" shape="poly">
-                <area target="_self" alt="ile_de_france_offers" title="ile_de_france_offers" href="https://www.leboncoin.fr/annonces/offres/ile_de_france/" coords="210,100,210,117,221,131,235,132,240,138,248,129,258,120,251,104,226,98" shape="poly">
-            </map>
+
+      <h1 class="idf_announces">Annonces : Ile-de-France</h1>
+      <div class="tableau_offres">
+
+        <ul class="table_header">
+          <li class="orange_li">Toutes</li>
+          <li>Particuliers</li>
+          <li>Professionnels</li>
+        </ul>
+
+
+
+          <div class="selectWrapper">
+
+            <select class="select" data-reactid="254">
+              <option selected="" value="time-desc">Tri : Plus récentes</option>
+              <option value="time-asc">Tri : Plus anciennes</option>
+              <option value="price-asc">Tri : Prix croissants</option>
+              <option value="price-desc">Tri : Prix décroissants</option>
+            </select>
           </div>
-        </section>
-        <section id="wrapper_region">
-           <select name="region" id="region">
-               <option selected=""> Choisissez une région</option>
-               <option value="Alsace">Alsace</option>
-               <option value="Aquitaine">Aquitaine</option>
-               <option value="Auvergne">Auvergne</option>
-               <option value="Basse-Normandie">Basse-Normandiei</option>
-               <option value="Bourgogne">Bourgogne</option>
-               <option value="Bretagne">Bretagne</option>
-               <option value="Centre">Centre</option>
-               <option value="Champagne-Ardenne">Champagne-Ardenne</option>
-               <option value="Corse">Corse</option>
-               <option value="Franche-Comté">Franche-Comté</option>
-               <option value="Haute-Normandie">Haute-Normandie</option>
-               <option value="Ile-de-France">Ile-de-France</option>
-               <option value="Languedoc-Roussillon">Languedoc-Roussillon</option>
-               <option value="Limousin">Limousin</option>
-               <option value="Lorraine">Lorraine</option>
-               <option value="Midi-Pyrénées">Midi-Pyrénées</option>
-               <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
-               <option value="Pays de la Loire">Pays de la Loire</option>
-               <option value="Picardie">Picardie</option>
-               <option value="Poitou-Charentes">Poitou-Charentes</option>
-               <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
-               <option value="Rhône-Alpes">Rhône-Alpes</option>
-               <option value="Guadeloupe">Guadeloupe</option>
-               <option value="Martinique">Martinique</option>
-               <option value="Guyane">Guyane</option>
-               <option value="Réunion">Réunion</option>
-           </select>
-        </section>
-      </section>
-      <h2 id="textFooter">
-        Sur le site leboncoin.fr, passez des annonces gratuites et sans commission. Vous pouvez consulter des petites annonces de particuliers et de professionnels partout en France, que vous cherchiez des annonces immobilières, des voitures d'occasion, des offres d'emploi, des meubles, du matériel électronique ou tout autre type de produits d'occasion.
-      </h2>
+
+          <div class="box_offers">
+            <ul class="box_list">
+              <li class="box_list_unity">
+                <a href="">
+                  <div class="image_container"><img src="img/a7cf69e01dcc611922258544b50e4712afbbb388.jpg" alt="image meuble"></div>
+                  <section class="descriptif_offres">
+                    <p>Meuble de chaussures HEMNES IKEA</p>
+                    <div class="category_city_pc">
+                      <p class="category_furniture">Ameublement</p>
+                      <p class="city_pc">Paris 75015</p>
+                    </div>
+                    <div class="prix_date">
+                      <div class="price">
+                        <span>50 €</span>
+                      </div>
+                    </div>
+                    <p class="date_time">Aujourd'hui, 08:52</p>
+
+                  </section>
+                </a>
+              </li>
+              <li class="box_list_unity">
+                <a href="">
+                  <div class="image_container"><img src="img/a7cf69e01dcc611922258544b50e4712afbbb388.jpg" alt="image meuble"></div>
+                  <section class="descriptif_offres">
+                    <p>Meuble de chaussures HEMNES IKEA</p>
+                    <div class="category_city_pc">
+                      <p class="category_furniture">Ameublement</p>
+                      <p class="city_pc">Paris 75015</p>
+                    </div>
+                    <div class="prix_date">
+                      <div class="price">
+                        <span>50 €</span>
+                      </div>
+                    </div>
+                    <p class="date_time">Aujourd'hui, 08:52</p>
+                  </section>
+                </a>
+              </li>
+              <li id="last_of_list" class="box_list_unity">
+                <a href="">
+                  <div class="image_container"><img src="img/a7cf69e01dcc611922258544b50e4712afbbb388.jpg" alt="image meuble"></div>
+                  <section class="descriptif_offres">
+                    <p>Meuble de chaussures HEMNES IKEA</p>
+                    <div class="category_city_pc">
+                      <p class="category_furniture">Ameublement</p>
+                      <p class="city_pc">Paris 75015</p>
+                    </div>
+                    <div class="prix_date">
+                      <div class="price">
+                        <span>50 €</span>
+                      </div>
+                    </div>
+                    <p class="date_time">Aujourd'hui, 08:52</p>
+                  </section>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section id="bottom" class="content-center">
+      <div class="switch_pages">
+        <span>
+          <i class="fas fa-angle-left"></i>
+        </span>
+        <div class="switch_pages_numbers">
+          <input value="1" class="input" type="number">
+          <span>/</span>
+          <span>135437</span>
+        </div>
+        <span>
+          <i class="fas fa-angle-right"></i>
+        </span>
+      </div>
     </section>
   </main>
+
+  <!--********************************Footer*********************************-->
+
   <footer id="footer">
     <section class="footer_content">
       <div class="content-center">
@@ -285,6 +333,15 @@
       </div>
     </section>
   </footer>
+
+
+
+
+
+
+
+
+
 
 
 

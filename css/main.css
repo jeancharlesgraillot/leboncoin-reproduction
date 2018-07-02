@@ -432,7 +432,7 @@ h2{
 }
 
 #footer{
-  
+
   width: 100%;
   height: 75px;
   background-color: #474747;
@@ -783,4 +783,110 @@ textarea{
   height: 87%;
 }
 
+}
+
+/******************************Page Offres************************************/
+
+.idf_announces{
+  width: 100%;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  padding: 0;
+  color: gray;
+  vertical-align: top;
+}
+
+.table_header{
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.table_header li{
+  display: inline-block;
+  background: #e6e6e6;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 3rem;
+}
+
+.orange_li{
+  color: #f56b2a;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+.selectWrapper{
+  border: 1px solid #4183d7;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.select{
+  width: 100%;
+  height: 40px;
+  line-height: 38px;
+  border: none;
+  background: transparent;
+}
+
+
+.border{
+
+}
+
+.box_offers{
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.box_list{
+  padding: 0;
+}
+
+.box_list_unity{
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+}
+
+.box_list_unity a{
+  width: 50%;
+}
+
+.box_list_unity#last_of_list{
+  border-bottom: 0;
+}
+
+.image_container{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+.descriptif_offres{
+  display: inline-block;
+  width: 58%;
+}
+
+.far .fa-heart{
+  position: relative;
+  left: 20%;
+}
+
+.switch_pages_numbers{
+  display: inline-block;
+}
+
+.content-center#bottom{
+  text-align: center;
 }
