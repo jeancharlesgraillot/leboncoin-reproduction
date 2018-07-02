@@ -1,0 +1,440 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Déposer une petite annonce sur leboncoin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header id="header">
+    <section class="headerContent">
+      <section class="content-center clearfix">
+        <a href="" id="menuButton">MENU</a>
+        <a href="https://www.leboncoin.fr/"><img id="siteLogo" src="img/lbc_logo-o.png" alt=""></a>
+        <nav id="headerNav">
+          <ul>
+            <li><a href="annonce.html" title="Déposer une annonce" >déposer une annonce</a></li>
+            <li><a href="https://www.leboncoin.fr/annonces/offres" title="Offres">offres</a></li>
+            <li><a href="https://www.leboncoin.fr/annonces/demandes" title="Demandes">demandes</a></li>
+            <li><a href="https://www.leboncoin.fr/aw?ca=12_s" title="Mes favoris">mes favoris</a></li>
+            <li><a href="https://www.leboncoin.fr/aw?ca=12_s&amp;selected=backup" title="Mes annonces">boutiques</a></li>
+            <li><a href="https://www.leboncoin.fr/aw?ca=12_s&amp;selected=search" title="Mes annonces">messages</a></li>
+          </ul>
+        </nav>
+
+        <button class="connexion">Se connecter</button>
+
+      </section>
+    </section>
+  </header>
+
+<!--*************************************************************************-->
+
+  <main>
+    <section class="content-center">
+      <section id="newad_form">
+        <header class="newad_form_header">
+          <h1 class="grey">Déposer une annonce</h1>
+        </header>
+        <form action="get" id="formular">
+          <div class="mainBox">
+
+            <section class="form_part_ads">
+              <article class="box_grey_dark">
+                <h2 class="title2" id="first">Votre annonce</h2>
+                <div class="container">
+                  <div class="line">
+                    <label class="label asterisque" for="category">Categorie *</label>
+                    <div class="select_category">
+                      <select name="category" id="category" class="select">
+                        <option value="0">«Choisissez une catégorie»</option>
+                        <option value="1"></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="line" id="account_type">
+                    <label class="label asterisque">Vous êtes un *</label>
+                    <div>
+                      <label class="label">
+                        <input id="private_ad_id" name="company_ad" value="0" checked="checked" type="radio"> Particulier
+                      </label>
+                      <label class="label">
+                          <input id="company_ad_id" name="company_ad" value="1" type="radio"> Professionnel
+                      </label>
+                    </div>
+                  </div>
+                  <div class="information_alert">
+                    Si vous agissez à titre professionnel, vous devez créer un Compte professionnel.
+                    A défaut, en application de l’article L 132-2 du Code de la consommation qui sanctionne les pratiques commerciales trompeuses, vous encourez notamment une peine d’emprisonnement de 2 ans et une amende de 300 000 euros.
+                    Pour plus d'informations, consultez <a href="//www2.leboncoin.fr/dc/vos_droits_et_obligations?ca=12_s">vos droits et obligations.</a>
+                  </div>
+                  <div class="line" id="newad_types">
+                    <label class="label asterisque">Type d'annonce *</label>
+                    <div>
+                      <label class="label">
+                        <input id="offres" value="0" checked="checked" type="radio"> Offres
+                      </label>
+                      <label class="label">
+                          <input id="demandes" value="1" type="radio"> Demandes
+                      </label>
+                    </div>
+                  </div>
+                  <div class="line" id="ad_title">
+                    <label class="label asterisque"><span>Titre de l'annonce</span></label>
+                    <div class="subject_wrapper">
+                      <input id="subject" name="subject" maxlength="50" value="" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="ad_text_price">
+                    <div class="ad_text">
+                      <label class="label asterisque" for="body">Texte de l'annonce *</label><br>
+                      <textarea name="body" id="body" rows="10" maxlength="4000"></textarea>
+                    </div>
+                    <div class="price">
+                      <label class="label asterisque enter_price"><span>Prix</span></label>
+                      <div class="price_wrapper">
+                        <input id="price" name="price" maxlength="8" value="" type="tel">
+                      </div>
+                    </div>
+                  </div>
+                  <section id="pictures">
+                    <div id="text_photos">Photos : Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</div>
+                    <aside class="pictures_list">
+                      <div class="photo"></div>
+                      <div class="photo"></div>
+                      <div class="photo"></div>
+                      <div class="photos_sup"></div>
+                    </aside>
+                  </section>
+                </div>
+              </article>
+            </section>
+
+            <section class="form_part_localisation">
+              <article class="box_grey_dark">
+                <h2 class="title2">Localisation</h2>
+                <div class="container address_map">
+                  <div class="localisation_left">
+                    <div class="city_postalcode">
+                      <label class="label asterisque" for="location_p">Ville ou code postal *</label><br>
+                      <input type="text" name="location_p" id="location_p">
+                    </div>
+                    <div class="address">
+                      <label class="label asterisque" for="address">Adresse</label>
+                      <div class="field_wrapper">
+                        <div id="address_container">
+                          <input name="address" id="address" placeholder="Voie ou numéro + voie" value="" maxlength="150" type="text">
+                        </div>
+                        <div id="adress_container2">
+                          <button id="adress_validation" type="button" disabled="disabled">Valider mon adresse</button>
+                        </div>
+                      </div>
+                      <div class="info_adress">
+                        <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce.<br>Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information ne sera conservée que le temps de la publication de votre annonce.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="localisation_right">
+                    <div class="mapContainer"><img src="img/map_france.png" alt="france map"></div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="form_part_information">
+              <article class="box_grey_dark">
+                <h2 class="title2">Vos informations</h2>
+                <div class="container">
+                  <div class="pseudo">
+                    <label class="asterisque" for="name">Pseudo *</label>
+                    <input id="name" name="name" maxlength="50" value="" type="text">
+                  </div>
+                  <div class="field_email">
+                    <label class="asterisque" for="email">Email *</label>
+                    <input id="email" name="email" maxlength="60" value="" type="email">
+                  </div>
+                  <div class="field_tel">
+                    <label class="asterisque" for="phone">Téléphone *</label>
+                    <input id="phone" name="phone" maxlength="10" value="" type="tel">
+                  </div>
+                  <div class="options">
+                    <label class="label checkbox">
+                    <input id="phone_hidden" name="phone_hidden" value="1" type="checkbox">
+                    Masquer le numéro de téléphone dans l'annonce.
+                    </label>
+                  </div>
+                  <div class="options">
+                    <label class="label checkbox">
+                    <input id="no_salesmen" name="no_salesmen" value="1" checked="checked" type="checkbox">
+                    Je ne souhaite pas être sollicité par des sociétés étrangères au site leboncoin.fr
+                    </label>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+
+          <p class="required_fields"><strong>Champs obligatoires *</strong></p>
+          <div class="validate">
+            <input value="Valider" id="newadSubmit" class="button-blue" type="submit">
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+<!--*************************************************************************-->
+
+  <footer id="footer">
+    <section class="footer_content">
+      <div class="content-center">
+        <section  id="footermobile">
+          <p class="copyright">leboncoin 2006 - 2018</p>
+          <article class="social">
+            <p>
+              <a href="https://www.facebook.com/leboncoin-1565057520410527/" title="facebook leboncoin">
+                <img id="facebook" src="img/icons8-facebook-48.png" class="social_network_icon" alt="facebook leboncoin">
+              </a>
+              <a href="https://twitter.com/leboncoin/" title="twitter leboncoin">
+                <img id="twitter" src="img/icons8-logo-twitter-encadré-48.png" class="social_network_icon" alt="twitter leboncoin">
+              </a>
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+    <section id="categories">
+      <div class="content-center">
+        <section id="categories_div">
+          <div>
+            <ul>
+              <li class="title"><a href="">EMPLOI</a></li>
+              <li><a href="">Offres d'emploi</a></li>
+
+              <li class="title"><a href="">VEHICULES</a></li>
+              <li><a href="">Voitures</a></li>
+              <li><a href="">Motos</a></li>
+              <li><a href="">Caravaning</a></li>
+              <li><a href="">Utilitaires</a></li>
+              <li><a href="">Equipement Auto</a></li>
+              <li><a href="">Equipement Moto</a></li>
+              <li><a href="">Equipement Caravaning</a></li>
+              <li><a href="">Nautisme</a></li>
+              <li><a href="">Equipement Nautisme</a></li>
+
+              <li class="title"><a href="">IMMOBILIER</a></li>
+              <li><a href="">Ventes immobilières</a></li>
+              <li><a href="">Locations</a></li>
+              <li><a href="">Colocations</a></li>
+              <li><a href="">Bureaux et commerces</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="title"><a href="">VACANCES</a></li>
+              <li><a href="">Locations & Gîtes</a></li>
+              <li><a href="">Chambres d'hôtes</a></li>
+              <li><a href="">Campings</a></li>
+              <li><a href="">Hôtels</a></li>
+              <li><a href="">Hébergements insolites</a></li>
+
+              <li class="title"><a href="" title="maison">MAISON</a></li>
+              <li><a href="">Ameublement</a></li>
+              <li><a href="">Electroménager</a></li>
+              <li><a href="">Arts de la table</a></li>
+              <li><a href="">Décoration</a></li>
+              <li><a href="">Linge de maison</a></li>
+              <li><a href="">Bricolage</a></li>
+              <li><a href="">Jardinage</a></li>
+              <li><a href="">Vêtements</a></li>
+              <li><a href="">Chaussures</a></li>
+              <li><a href="">Accessoires & Bagagerie</a></li>
+              <li><a href="">Montres & Bijoux</a></li>
+              <li><a href="">Equipement bébé</a></li>
+              <li><a href="">Vêtements bébé</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="title"><a href="">MULTIMEDIA</a></li>
+              <li><a href="">Informatique</a></li>
+              <li><a href="">Consoles & jeux vidéo</a></li>
+              <li><a href="">Image & Son</a></li>
+              <li><a href="">Téléphonie</a></li>
+
+              <li class="title"><a href="">LOISIRS</a></li>
+              <li><a href="">DVD / Films</a></li>
+              <li><a href="">CD / Musiques</a></li>
+              <li><a href="">Livres</a></li>
+              <li><a href="">Animaux</a></li>
+              <li><a href="">Vélos</a></li>
+              <li><a href="">Sports & Hobbies</a></li>
+              <li><a href="">Instruments de musique</a></li>
+              <li><a href="">Collection</a></li>
+              <li><a href="">Jeux & Jouets</a></li>
+              <li><a href="">Vins & Gastronomie</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="title"><a href="">MATERIEL PROFESSIONNEL</a></li>
+              <li><a href="">Matériel Agricole</a></li>
+              <li><a href="">Transport - Manutention</a></li>
+              <li><a href="">BTP - Chantier Gros-oeuvre</a></li>
+              <li><a href="">Outillage - Matériaux 2nd-oeuvre</a></li>
+              <li><a href="">Équipements Industriels</a></li>
+              <li><a href="">Restauration - Hôtellerie</a></li>
+              <li><a href="">Fournitures de Bureau</a></li>
+              <li><a href="">Commerces & Marchés</a></li>
+              <li><a href="">Matériel Médical</a></li>
+
+              <li class="title"><a href="">SERVICES</a></li>
+              <li><a href="">Prestations de services</a></li>
+              <li><a href="">Billetterie</a></li>
+              <li><a href="">Evénements</a></li>
+              <li><a href="">Cours particuliers</a></li>
+              <li><a href="">Covoiturage</a></li>
+
+              <li class="title"><a href="">AUTRES</a></li>
+              <li><a href="">Autres</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="color_footer">
+      <div class="content-center">
+        <section id="sectionFooterNav">
+          <nav class="footerNav">
+            <h3>A propos du boncoin</h3>
+            <ul>
+              <li><a href="">Qui sommes-nous?</a></li>
+              <li><a href="">Nous rejoindre</a></li>
+              <li><a href="">Impact environnemental</a></li>
+            </ul>
+            <h3>Nos applications</h3>
+            <ul>
+              <li>
+                <a href=""><img src="img/download_on_app_store.png" alt=""></a>
+                <a href=""><img src="img/download_on_google_play.png" alt=""></a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footerNav">
+            <h3>Informations légales</h3>
+            <ul>
+              <li><a href="">Conditions générales d'utilisation</a></li>
+              <li><a href="">Règles de diffusion</a></li>
+              <li><a href="">Conditions générales de vente</a></li>
+              <li><a href="">Vie privée et cookies</a></li>
+              <li><a href="">Vos droits et obligations</a></li>
+            </ul>
+          </nav>
+          <nav class="footerNav">
+            <h3>Professionnels</h3>
+            <ul>
+              <li><a href="">Publicité</a></li>
+              <li><a href="">Professionnels de l'immobilier</a></li>
+              <li><a href="">Vos recrutements</a></li>
+              <li><a href="">Toutes nos solutions pro</a></li>
+            </ul>
+          </nav>
+          <nav class="footerNav">
+            <h3>Des questions ?</h3>
+            <ul>
+              <li><a href="">Aide</a></li>
+              <li><a href="">Nous contacter</a></li>
+            </ul>
+            <h3>Vous êtes à l'étranger ?</h3>
+            <div id="wrapper_country">
+              <article id="selectCountry">
+                <button>France</button>
+              </article>
+            </div>
+          </nav>
+        </section>
+        <article id="partenaires">
+          <p>Partenaires: <a href="">Younited Credit</a> - <a href="">Leboncoin Emploi Cadres</a> - <a href="">Agriaffaires</a> - <a href="">MachineryZone</a> - <a href="">leDénicheur</a> - <a href="">AVendreALouer</a></p>
+        </article>
+        <section id="footerEnd" class="clearfix">
+          <p>leboncoin 2006 - 2018</p>
+          <article>
+            <p>Retrouvez-nous sur:
+              <a href=""><img class="social_network_icon" id="facebook" src="img/icons8-facebook-48.png" alt=""></a>
+              <a href=""><img class="social_network_icon" id="twitter" src="img/icons8-logo-twitter-encadré-48.png" alt=""></a>
+            </p>
+          </article>
+        </section>
+
+
+      </div>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
