@@ -27,10 +27,11 @@
       <section class="content-center clearfix">
         <a href="" id="menuButton">MENU</a>
         <a href="https://www.leboncoin.fr/"><img id="siteLogo" src="img/lbc_logo-o.png" alt=""></a>
+        <a href="" id="magnifying_glass"><img src="img\icons8-chercher-48.png" alt="loupe"></a>
         <nav id="headerNav">
           <ul>
             <li><a href="annonce.html" title="Déposer une annonce" >déposer une annonce</a></li>
-            <li><a href="https://www.leboncoin.fr/annonces/offres" title="Offres">offres</a></li>
+            <li><a href="offres.html" title="Offres">offres</a></li>
             <li><a href="https://www.leboncoin.fr/annonces/demandes" title="Demandes">demandes</a></li>
             <li><a href="https://www.leboncoin.fr/aw?ca=12_s" title="Mes favoris">mes favoris</a></li>
             <li><a href="https://www.leboncoin.fr/aw?ca=12_s&amp;selected=backup" title="Mes annonces">boutiques</a></li>
@@ -45,6 +46,48 @@
   </header>
 
   <main id="main_offres">
+
+    <section class="content-center">
+      <form action="" class="searchBox">
+        <div class="searchInput">
+          <div class="search_and_cat">
+            <input name="search_choice" value="" maxlength="500" placeholder="Que recherchez-vous ?" type="text">
+            <select name="cat_choice" id="cat_choice">
+             <option value="">Toutes catégories</option>
+             <option value="emploi">Emploi</option>
+            </select>
+          </div>
+          <div class="options_and_place">
+            <div class="wrapper_options">
+              <div class="options">
+                <label class="label checkbox">
+                <input id="only_title_search" name="only_title_search" value="1" type="checkbox">
+                Rechercher dans le titre uniquement
+                </label>
+              </div>
+              <div class="options">
+                <label class="label checkbox">
+                <input id="emergency_announces" name="emergency_announces" value="1" checked="checked" type="checkbox">
+                Annonces urgentes uniquement
+                </label>
+              </div>
+            </div>
+            <div class="region_choice">
+              <select name="region_choice2" id="region_choice2">
+               <option value="">Ile de France</option>
+               <option value="emploi">Toute la France</option>
+              </select>
+            </div>
+            <div class="city_or_pc">
+              <input placeholder="Ville ou code postal" autocomplete="off" role="combobox" value="">
+            </div>
+          </div>
+        </div>
+        <div class="searchButton">
+          <input value="Rechercher" type="submit">
+        </div>
+      </form>
+    </section>
     <section class="content-center">
 
       <h1 class="idf_announces">Annonces : Ile-de-France</h1>
