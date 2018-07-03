@@ -965,7 +965,7 @@ textarea{
   #magnifying_glass{
     display: none;
   }
-  .content-center form{
+  .searchBox{
     display: flex;
   }
 }
